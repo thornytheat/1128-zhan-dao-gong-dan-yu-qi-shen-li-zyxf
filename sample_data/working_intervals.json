@@ -1,0 +1,492 @@
+[
+  {
+    "district": "政西",
+    "start": 480,
+    "end": 720,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 780,
+    "end": 1005,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 1920,
+    "end": 2160,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 2220,
+    "end": 2445,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 3360,
+    "end": 3600,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 3660,
+    "end": 3885,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 7680,
+    "end": 7920,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 7980,
+    "end": 8205,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 9120,
+    "end": 9360,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 9420,
+    "end": 9645,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 10560,
+    "end": 10800,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 10860,
+    "end": 11085,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 12000,
+    "end": 12240,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 12300,
+    "end": 12525,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 13440,
+    "end": 13680,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 13740,
+    "end": 13965,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 480,
+    "end": 720,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 780,
+    "end": 1005,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 1920,
+    "end": 2160,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 2220,
+    "end": 2445,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 3360,
+    "end": 3600,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 3660,
+    "end": 3885,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 7680,
+    "end": 7920,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 7980,
+    "end": 8205,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 9120,
+    "end": 9360,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 9420,
+    "end": 9645,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 10560,
+    "end": 10800,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 10860,
+    "end": 11085,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 12000,
+    "end": 12240,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 12300,
+    "end": 12525,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 13440,
+    "end": 13680,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "河口",
+    "start": 13740,
+    "end": 13965,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 480,
+    "end": 720,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 780,
+    "end": 1005,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 1920,
+    "end": 2160,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 2220,
+    "end": 2445,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 3360,
+    "end": 3600,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 3660,
+    "end": 3885,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 7680,
+    "end": 7920,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 7980,
+    "end": 8205,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 9120,
+    "end": 9360,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 9420,
+    "end": 9645,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 10560,
+    "end": 10800,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 10860,
+    "end": 11085,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 12000,
+    "end": 12240,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 12300,
+    "end": 12525,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 13440,
+    "end": 13680,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "新坊",
+    "start": 13740,
+    "end": 13965,
+    "work": true,
+    "closure": false,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  },
+  {
+    "district": "政西",
+    "start": 500,
+    "end": 545,
+    "work": true,
+    "closure": true,
+    "team": "城区占道审查站",
+    "authority": "城市管理通告",
+    "revision": 1
+  }
+]

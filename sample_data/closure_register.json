@@ -1,0 +1,192 @@
+[
+  {
+    "permit": "SC-206",
+    "submitted": 7420,
+    "recorded": 9530,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-407"
+  },
+  {
+    "permit": "SC-207",
+    "submitted": 7513,
+    "recorded": 9560,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-408"
+  },
+  {
+    "permit": "SC-208",
+    "submitted": 7606,
+    "recorded": 9590,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-409"
+  },
+  {
+    "permit": "SC-209",
+    "submitted": 7699,
+    "recorded": 9620,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-410"
+  },
+  {
+    "permit": "SC-210",
+    "submitted": 7792,
+    "recorded": 9650,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-411"
+  },
+  {
+    "permit": "SC-211",
+    "submitted": 7885,
+    "recorded": 9680,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-412"
+  },
+  {
+    "permit": "SC-212",
+    "submitted": 7458,
+    "recorded": 9710,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-413"
+  },
+  {
+    "permit": "SC-213",
+    "submitted": 7551,
+    "recorded": 9740,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-414"
+  },
+  {
+    "permit": "SC-214",
+    "submitted": 7644,
+    "recorded": 9770,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-415"
+  },
+  {
+    "permit": "SC-215",
+    "submitted": 7737,
+    "recorded": 9800,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-416"
+  },
+  {
+    "permit": "SC-216",
+    "submitted": 7830,
+    "recorded": 9830,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-417"
+  },
+  {
+    "permit": "SC-217",
+    "submitted": 7923,
+    "recorded": 9860,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-418"
+  },
+  {
+    "permit": "SC-218",
+    "submitted": 7496,
+    "recorded": 9890,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-419"
+  },
+  {
+    "permit": "SC-219",
+    "submitted": 7589,
+    "recorded": 9920,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-420"
+  },
+  {
+    "permit": "SC-220",
+    "submitted": 7682,
+    "recorded": 9950,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-421"
+  },
+  {
+    "permit": "SC-221",
+    "submitted": 7775,
+    "recorded": 9980,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-422"
+  },
+  {
+    "permit": "SC-222",
+    "submitted": 7868,
+    "recorded": 10010,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "河口 主管",
+    "ticket": "C-423"
+  },
+  {
+    "permit": "SC-223",
+    "submitted": 7441,
+    "recorded": 10040,
+    "late": false,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "新坊 主管",
+    "ticket": "C-424"
+  },
+  {
+    "permit": "SC-224",
+    "submitted": 7534,
+    "recorded": 10070,
+    "late": true,
+    "signature": "督办科复核",
+    "disposition": "已会签",
+    "primary": "政西 主管",
+    "ticket": "C-425"
+  }
+]

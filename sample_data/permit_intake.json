@@ -1,0 +1,473 @@
+[
+  {
+    "permit": "SC-206",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "开挖修复",
+    "customer": "广严建设",
+    "received": 7423,
+    "opened": 7420,
+    "version": 1,
+    "obstruction": 22,
+    "lanes": 3,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10000
+  },
+  {
+    "permit": "SC-207",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "给水接驳",
+    "customer": "西城养护科",
+    "received": 7516,
+    "opened": 7513,
+    "version": 1,
+    "obstruction": 61,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10020
+  },
+  {
+    "permit": "SC-208",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "电力抢修",
+    "customer": "宜宁供电所",
+    "received": 7609,
+    "opened": 7606,
+    "version": 1,
+    "obstruction": 100,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10040
+  },
+  {
+    "permit": "SC-209",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "开挖修复",
+    "customer": "集建管网",
+    "received": 7702,
+    "opened": 7699,
+    "version": 1,
+    "obstruction": 139,
+    "lanes": 1,
+    "files": [
+      "交通疏解图"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10060
+  },
+  {
+    "permit": "SC-210",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "电力抢修",
+    "customer": "广严建设",
+    "received": 7795,
+    "opened": 7792,
+    "version": 1,
+    "obstruction": 178,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10080
+  },
+  {
+    "permit": "SC-211",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "开挖修复",
+    "customer": "西城养护科",
+    "received": 7888,
+    "opened": 7885,
+    "version": 1,
+    "obstruction": 217,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10100
+  },
+  {
+    "permit": "SC-212",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "给水接驳",
+    "customer": "宜宁供电所",
+    "received": 7461,
+    "opened": 7458,
+    "version": 1,
+    "obstruction": 256,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10120
+  },
+  {
+    "permit": "SC-213",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "电力抢修",
+    "customer": "集建管网",
+    "received": 7554,
+    "opened": 7551,
+    "version": 1,
+    "obstruction": 295,
+    "lanes": 3,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10140
+  },
+  {
+    "permit": "SC-214",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "给水接驳",
+    "customer": "广严建设",
+    "received": 7647,
+    "opened": 7644,
+    "version": 1,
+    "obstruction": 34,
+    "lanes": 1,
+    "files": [
+      "交通疏解图"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10160
+  },
+  {
+    "permit": "SC-215",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "电力抢修",
+    "customer": "西城养护科",
+    "received": 7740,
+    "opened": 7737,
+    "version": 1,
+    "obstruction": 73,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10180
+  },
+  {
+    "permit": "SC-216",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "开挖修复",
+    "customer": "宜宁供电所",
+    "received": 7833,
+    "opened": 7830,
+    "version": 1,
+    "obstruction": 112,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10200
+  },
+  {
+    "permit": "SC-217",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "给水接驳",
+    "customer": "集建管网",
+    "received": 7926,
+    "opened": 7923,
+    "version": 1,
+    "obstruction": 151,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10220
+  },
+  {
+    "permit": "SC-218",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "开挖修复",
+    "customer": "广严建设",
+    "received": 7499,
+    "opened": 7496,
+    "version": 1,
+    "obstruction": 190,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10240
+  },
+  {
+    "permit": "SC-219",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "给水接驳",
+    "customer": "西城养护科",
+    "received": 7592,
+    "opened": 7589,
+    "version": 1,
+    "obstruction": 229,
+    "lanes": 1,
+    "files": [
+      "交通疏解图"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10260
+  },
+  {
+    "permit": "SC-220",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "电力抢修",
+    "customer": "宜宁供电所",
+    "received": 7685,
+    "opened": 7682,
+    "version": 1,
+    "obstruction": 268,
+    "lanes": 3,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10280
+  },
+  {
+    "permit": "SC-221",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "开挖修复",
+    "customer": "集建管网",
+    "received": 7778,
+    "opened": 7775,
+    "version": 1,
+    "obstruction": 307,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10300
+  },
+  {
+    "permit": "SC-222",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "电力抢修",
+    "customer": "广严建设",
+    "received": 7871,
+    "opened": 7868,
+    "version": 1,
+    "obstruction": 46,
+    "lanes": 1,
+    "files": [
+      "交通疏解图"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10320
+  },
+  {
+    "permit": "SC-223",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "开挖修复",
+    "customer": "西城养护科",
+    "received": 7444,
+    "opened": 7441,
+    "version": 1,
+    "obstruction": 85,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10340
+  },
+  {
+    "permit": "SC-224",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "给水接驳",
+    "customer": "宜宁供电所",
+    "received": 7537,
+    "opened": 7534,
+    "version": 1,
+    "obstruction": 124,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10360
+  },
+  {
+    "permit": "SC-225",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "电力抢修",
+    "customer": "集建管网",
+    "received": 7630,
+    "opened": 7627,
+    "version": 1,
+    "obstruction": 163,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10380
+  },
+  {
+    "permit": "SC-226",
+    "district": "新坊",
+    "road": "CC-42",
+    "work": "给水接驳",
+    "customer": "广严建设",
+    "received": 7723,
+    "opened": 7720,
+    "version": 1,
+    "obstruction": 202,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10400
+  },
+  {
+    "permit": "SC-206",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "开挖修复",
+    "customer": "广严建设",
+    "received": 8500,
+    "opened": 7420,
+    "version": 2,
+    "obstruction": 22,
+    "lanes": 4,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10000
+  },
+  {
+    "permit": "SC-213",
+    "district": "河口",
+    "road": "TH-22",
+    "work": "电力抢修",
+    "customer": "集建管网",
+    "received": 7554,
+    "opened": 7551,
+    "version": 2,
+    "obstruction": 295,
+    "lanes": 3,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": true,
+    "planned": 10140
+  },
+  {
+    "permit": "SC-212",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "给水接驳",
+    "customer": "宜宁供电所",
+    "received": 7461,
+    "opened": 7458,
+    "version": 1,
+    "obstruction": 100,
+    "lanes": 1,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": false,
+    "withdrawn": false,
+    "planned": 10120
+  },
+  {
+    "permit": "SC-无效单",
+    "district": "政西",
+    "road": "XC-11",
+    "work": "电力抢修",
+    "customer": "西城养护科",
+    "received": 7740,
+    "opened": 7737,
+    "version": 1,
+    "obstruction": 73,
+    "lanes": 0,
+    "files": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "urgent": true,
+    "withdrawn": false,
+    "planned": 10180
+  }
+]

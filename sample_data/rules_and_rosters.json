@@ -1,0 +1,250 @@
+{
+  "at": 8100,
+  "split": 7050,
+  "audit_at": 10000,
+  "urgent_minutes": 170,
+  "ordinary_minutes": 420,
+  "road_aliases": {
+    "西坊大道": [
+      "XC-11",
+      "西房路"
+    ],
+    "团结浜街": [
+      "TH-22",
+      "团结桥路"
+    ],
+    "菜港西路": [
+      "CC-42",
+      "新港西路"
+    ]
+  },
+  "road_classes": {
+    "西坊大道": "主干路",
+    "团结浜街": "次干路",
+    "菜港西路": "支路"
+  },
+  "required": {
+    "开挖修复": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "给水接驳": [
+      "交通疏解图",
+      "恢复承诺书"
+    ],
+    "电力抢修": [
+      "交通疏解图",
+      "恢复承诺书"
+    ]
+  },
+  "pauses": {
+    "SC-206": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-209": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-212": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-215": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-218": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-221": [
+      [
+        7660,
+        7710
+      ]
+    ],
+    "SC-224": [
+      [
+        7660,
+        7710
+      ]
+    ]
+  },
+  "exercise_absences": {
+    "政西 主管": [8100, 8295],
+    "河口 副组": [8145, 8225]
+  },
+  "model": {
+    "key": "R-119",
+    "ridge": 0.04,
+    "maximum_iterations": 180,
+    "learning_rate": 0.17,
+    "cut_low": 0.4,
+    "cut_high": 0.62,
+    "reject": 7.0,
+    "low_count": 1
+  },
+  "reviewers": [
+    {
+      "handle": "政西 主管",
+      "district": "政西",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8100,
+      "shift_end": 8295,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [],
+      "second_sign": true
+    },
+    {
+      "handle": "政西 副组",
+      "district": "政西",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8107,
+      "shift_end": 8280,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [
+        [
+          8155,
+          8167
+        ]
+      ],
+      "second_sign": true
+    },
+    {
+      "handle": "政西 轮巡",
+      "district": "政西",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8114,
+      "shift_end": 8265,
+      "allow_emergency": false,
+      "stock": 4,
+      "paused": [],
+      "second_sign": false
+    },
+    {
+      "handle": "河口 主管",
+      "district": "河口",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8100,
+      "shift_end": 8295,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [],
+      "second_sign": true
+    },
+    {
+      "handle": "河口 副组",
+      "district": "河口",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8107,
+      "shift_end": 8280,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [
+        [
+          8155,
+          8167
+        ]
+      ],
+      "second_sign": true
+    },
+    {
+      "handle": "河口 轮巡",
+      "district": "河口",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8114,
+      "shift_end": 8265,
+      "allow_emergency": false,
+      "stock": 4,
+      "paused": [],
+      "second_sign": false
+    },
+    {
+      "handle": "新坊 主管",
+      "district": "新坊",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8100,
+      "shift_end": 8295,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [],
+      "second_sign": true
+    },
+    {
+      "handle": "新坊 副组",
+      "district": "新坊",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8107,
+      "shift_end": 8280,
+      "allow_emergency": true,
+      "stock": 4,
+      "paused": [
+        [
+          8155,
+          8167
+        ]
+      ],
+      "second_sign": true
+    },
+    {
+      "handle": "新坊 轮巡",
+      "district": "新坊",
+      "skills": [
+        "开挖修复",
+        "给水接驳",
+        "电力抢修"
+      ],
+      "available": 8114,
+      "shift_end": 8265,
+      "allow_emergency": false,
+      "stock": 4,
+      "paused": [],
+      "second_sign": false
+    }
+  ]
+}
