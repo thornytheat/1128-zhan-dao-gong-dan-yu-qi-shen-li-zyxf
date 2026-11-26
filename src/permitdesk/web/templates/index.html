@@ -27,6 +27,12 @@
           <button id="submit" class="primary" type="submit" disabled>重新排班</button>
           <button class="quiet" id="export" type="button" disabled>导出</button>
         </form>
+        <form id="absence-form" class="scenario">
+          <label for="absence-input">缺班人员与分钟区间（JSON）<input id="absence-input" type="text" inputmode="text"
+            value='{"政西 主管": [8100, 8295], "河口 副组": [8145, 8225]}' aria-describedby="absence-help"></label>
+          <button id="reissue-submit" class="primary" type="button">缺班重排</button>
+          <p id="absence-help" class="hint">例：{"审理员": [起, 止]}；同一缺班重复提交不会重复占位。</p>
+        </form>
       </header>
       <dl class="kpis" id="metrics" aria-label="本批指标"></dl>
       <div class="board">
@@ -38,6 +44,11 @@
         <section class="panel signal" aria-labelledby="chart-heading">
           <div class="panel-heading"><h2 id="chart-heading">许可风险分组</h2><p>逾期风险</p></div>
           <div class="chart" id="chart" data-axis="逾期风险"></div>
+        </section>
+        <section id="reissue-panel" class="panel reissue" aria-labelledby="reissue-heading">
+          <div class="panel-heading"><h2 id="reissue-heading">缺班重排裁决</h2><p id="reissue-meta">尚未重排</p></div>
+          <div id="reissue-summary"></div>
+          <div id="reissue-records" class="table-scroll" tabindex="0" role="region" aria-label="缺班重排裁决与告知凭据"></div>
         </section>
         <section id="evidence" class="panel evidence" aria-labelledby="evidence-heading">
           <div class="panel-heading"><h2 id="evidence-heading" tabindex="-1">许可附件</h2><p id="evidence-summary"></p></div>

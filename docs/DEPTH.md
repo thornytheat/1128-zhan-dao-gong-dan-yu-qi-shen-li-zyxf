@@ -13,6 +13,7 @@ AI/ML / 传统ML · 市政占道工单逾期预测与许可复核排班
 | M3 | 审理特征 | 占道范围、法定消耗、材料和辖区负载形成时点特征并隔离迟结案标签 | `src/permitdesk/review_features/snapshot.py` `src/permitdesk/review_features/contracts.py` `src/permitdesk/review_features/service.py` | `tests/test_review_features.py` |
 | M4 | 超期概率 | 逻辑回归处理少数超期，冻结缩放，用独立留出桶保序校准并检查异常工况 | `src/permitdesk/deadline_classifier/classifier.py` `src/permitdesk/deadline_classifier/contracts.py` `src/permitdesk/deadline_classifier/service.py` | `tests/test_deadline_classifier.py` |
 | M5 | 审理编组 | 按应急和法定剩余时间排队，强制辖区、资质、班内时段及大占道双签审 | `src/permitdesk/review_roster/staffing.py` `src/permitdesk/review_roster/contracts.py` `src/permitdesk/review_roster/service.py` | `tests/test_review_roster.py` |
+| M5b | 缺班重排 | 已告知预约不被悄悄挪动；受冲击预约先改派（时限内组合优先），安置不了退回并释放席位；席位只补本班未安排工单；改派/补位追加告知凭据且旧凭据保留；同缺班重跑不重复占位 | `src/permitdesk/review_roster/reissue.py` `src/permitdesk/review_roster/notice_ledger.py` `src/permitdesk/review_roster/shift_replay.py` | `tests/test_reissue_policy.py` `tests/test_notice_ledger.py` `tests/test_reissue_delivery.py` |
 | M6 | 许可追溯 | 工单回执事后计算分组 AP、Brier 和空桶，验证双签证据和依赖版本摘要 | `src/permitdesk/permit_journal/ledger.py` `src/permitdesk/permit_journal/contracts.py` `src/permitdesk/permit_journal/service.py` | `tests/test_permit_journal.py` |
 
 ## 边界案例
@@ -30,3 +31,7 @@ AI/ML / 传统ML · 市政占道工单逾期预测与许可复核排班
 | TRAP-44 | 未校准置信度排先后 | 把分类分数当真实概率 | 区间保序校准和分布外拦截 | `src/permitdesk/deadline_classifier/classifier.py` | `tests/test_deadline_classifier.py::test_isotonic_calibration_pooling` |
 | TRAP-53 | 混长短工单改变概率 | 依赖当前推断批统计 | 冻结训练归一化 | `src/permitdesk/deadline_classifier/classifier.py` | `tests/test_deadline_classifier.py::test_inference_is_independent_of_batch` |
 | TRAP-54 | 模型或日历变化 | 沿用老签审凭证 | 依赖签名重新生成 | `src/permitdesk/permit_journal/ledger.py` | `tests/test_permit_journal.py::test_source_model_and_calendar_invalidate_receipt` |
+| TRAP-61 | 缺班后重排把已告知时段悄悄挪走 | 整体从零再解一遍班表 | 未受缺班冲击的预约原样保留并预先占住游标，只有受冲击预约进入改派 | `src/permitdesk/review_roster/reissue.py` | `tests/test_reissue_policy.py::test_unaffected_notified_appointment_is_retained_untouched` |
+| TRAP-62 | 改派覆盖或删除原告知记录 | 就地更新同一条告知 | 追加式告知台账，新凭据以 supersede 引用旧凭据，旧凭据保留 | `src/permitdesk/review_roster/notice_ledger.py` | `tests/test_notice_ledger.py::test_reassignment_keeps_old_receipt_and_links_chain` |
+| TRAP-63 | 缺班席位被任意新工单占用 | 按名单先到先得补位 | 仅本班基线未安排工单可补，补位数不超过退回释放席位数，顺序看应急、逾期与法定剩余时间 | `src/permitdesk/review_roster/reissue.py` | `tests/test_reissue_policy.py::test_backfill_only_draws_from_shift_unscheduled_dockets` |
+| TRAP-64 | 同一缺班重跑重复占位、重复告知 | 每次重跑都新增席位和凭据 | 内容寻址凭据去重、确定性裁决与重跑令牌，相同输入得到相同结果 | `src/permitdesk/review_roster/reissue.py` `src/permitdesk/review_roster/shift_replay.py` | `tests/test_reissue_policy.py::test_same_absence_rerun_is_identical_and_does_not_duplicate_seats_or_notices` |

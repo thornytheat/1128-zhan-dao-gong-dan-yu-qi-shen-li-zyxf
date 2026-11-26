@@ -10,7 +10,7 @@ from threading import Lock
 from flask import Flask, jsonify, render_template, request
 from werkzeug.exceptions import BadRequest, RequestEntityTooLarge, UnsupportedMediaType
 
-from .pipeline import run
+from .pipeline import run, reissue_scenario
 
 MODULES = (('permit_intake', '许可流转'), ('calendar_intervals', '日历折算'), ('review_features', '审理特征'), ('deadline_classifier', '超期概率'), ('review_roster', '审理编组'), ('permit_journal', '许可追溯'))
 application = Flask(__name__, static_folder="web/static", template_folder="web/templates")
@@ -68,6 +68,24 @@ def scenario():
     except (BadRequest, UnsupportedMediaType, ValueError):
         return jsonify(code="INVALID_SCENARIO", message="请输入 1 到 100 之间的整数"), 400
     return jsonify(snapshot(capacity))
+
+
+@application.post("/api/reissue")
+def reissue():
+    try:
+        body = request.get_json()
+        if not isinstance(body, dict) or set(body) not in ({"capacity", "absences"}, {"absences"}):
+            raise ValueError("请提交包含 capacity 与 absences 的 JSON 对象")
+        capacity = parse_capacity(body.get("capacity", 8))
+        absences = body["absences"]
+        packet = reissue_scenario(capacity, absences)
+    except (BadRequest, UnsupportedMediaType, ValueError):
+        return jsonify(code="INVALID_ABSENCE", message="缺班人员须在班表内，且时段为两个递增的整数分钟端点"), 400
+    packet = {**packet, "capacity": capacity}
+    packet["run_id"] = sha256(
+        json.dumps(packet, ensure_ascii=False, sort_keys=True).encode()
+    ).hexdigest()[:12]
+    return jsonify(packet)
 
 
 @application.get("/api/stages/<module>")

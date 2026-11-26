@@ -8,7 +8,7 @@
 docker compose up --build -d
 ```
 
-打开 `http://127.0.0.1:18207/` 查看占道许可台账。左侧六个入口可展开运行证据。调整「复核名额（单）」，点击「重新排班」比较处置结果。结束后执行 `docker compose down --remove-orphans`。
+打开 `http://127.0.0.1:18207/` 查看占道许可台账。左侧六个入口可展开运行证据。调整「复核名额（单）」，点击「重新排班」比较处置结果；在「缺班人员与分钟区间」填入临时缺班（如 `{"政西 主管": [8100, 8295]}`）后点击「缺班重排」，查看保留、改派、退回与补位裁决及只追加的告知凭据。结束后执行 `docker compose down --remove-orphans`。
 
 ## 独立业务模块
 
@@ -23,6 +23,7 @@ docker compose up --build -d
 
 - `GET /api/overview` 返回默认运行及其指纹。
 - `POST /api/scenario` 接收 `{"capacity": 3}`。入口接受 1–100 的整数，应用样例时使用该业务额度。
+- `POST /api/reissue` 接收 `{"capacity": 8, "absences": {"政西 主管": [8100, 8295]}}`，在已发布班表上裁决保留、改派、退回与补位，并返回只追加的告知凭据；`capacity` 可省略，非法缺班返回 `INVALID_ABSENCE`。
 - `GET /api/stages/permit_journal` 查看该环节的独立证据，支持 `?capacity=3`。
 
 ```sh

@@ -29,7 +29,11 @@ def scenario_roster(roster, absences):
         start = max(first, person['available'])
         end = min(last, person['shift_end'])
         if start < end:
-            updated.append(person | {'paused': [*person['paused'], (start, end)]})
+            # 同一缺班重复套用不得重复占位：已登记的同段暂停直接保留。
+            paused = [tuple(span) for span in person['paused']]
+            if (start, end) not in paused:
+                paused.append((start, end))
+            updated.append(person | {'paused': paused})
         else:
             updated.append(person)
     return updated

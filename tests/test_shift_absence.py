@@ -86,3 +86,11 @@ def test_bad_absence_intervals_never_rewrite_published_schedule(invalid):
 def test_docket_change_after_snapshot_detected_before_rescheduling():
     with pytest.raises(ValueError, match='逐一覆盖'):
         compare([permit('A')], [employee('周')], {}, expected=())
+
+
+def test_reapplying_same_absence_does_not_duplicate_pause_slot():
+    roster = [employee('周')]
+    once = scenario_roster(roster, {'周': [120, 200]})
+    twice = scenario_roster(once, {'周': [120, 200]})
+    assert once[0]['paused'] == [(120, 200)]
+    assert twice[0]['paused'] == [(120, 200)]

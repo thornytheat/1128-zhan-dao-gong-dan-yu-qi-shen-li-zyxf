@@ -192,6 +192,78 @@ byId('export').addEventListener('click', () => {
     link.remove();
     window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
+
+const REISSUE_COLUMNS = {
+    permit: '许可号',
+    ruling: '裁决',
+    movement: '变动',
+    lawful_due_minute: '法定截止',
+    original_finish_state: '原约完审',
+    proposed_finish_state: '新班完审',
+    notice_id: '新告知凭据',
+    superseded_notice_id: '原告知凭据',
+    detail: '裁决依据',
+};
+const NOTICE_COLUMNS = {
+    kind: '告知类型',
+    permit: '许可号',
+    issued_minute: '告知分钟',
+    reviewer: '首审',
+    second: '二审',
+    start: '开始',
+    finish: '完审',
+    notice_id: '凭据号',
+    supersedes: '替代凭据',
+    reason: '告知依据',
+};
+
+function renderReissue(packet) {
+    byId('reissue-meta').textContent =
+        `重跑令牌 ${packet.replay_token} · 缺班 ${Object.entries(packet.absence_minutes)
+            .map(([handle, span]) => `${handle} ${span[0]}–${span[1]}`).join('；')}`;
+    const summary = packet.summary;
+    const summaryList = named('dl', undefined, 'record-details');
+    Object.entries(summary.ruling_counts).forEach(([label, value]) => {
+        summaryList.append(named('dt', label), named('dd', value));
+    });
+    summaryList.append(named('dt', '新班安排'), named('dd', summary.proposed_scheduled));
+    summaryList.append(named('dt', '法定时限内'), named('dd', summary.proposed_timely));
+    byId('reissue-summary').replaceChildren(summaryList);
+    const target = byId('reissue-records');
+    target.replaceChildren();
+    const noticeCaption = named('h3', `告知凭据台账（${packet.notices.length} 张，只追加不删除）`);
+    target.append(noticeCaption, tableFor(packet.notices, Object.keys(NOTICE_COLUMNS), NOTICE_COLUMNS));
+    const decisionCaption = named('h3', '逐单裁决（保留 / 改派 / 退回 / 补位）');
+    target.append(decisionCaption, tableFor(packet.decisions, Object.keys(REISSUE_COLUMNS), REISSUE_COLUMNS));
+}
+
+byId('reissue-submit').addEventListener('click', async () => {
+    const button = byId('reissue-submit');
+    let absences;
+    try {
+        absences = JSON.parse(byId('absence-input').value);
+    } catch (_error) {
+        announce('缺班区间须为合法 JSON', true);
+        return;
+    }
+    const capacity = byId('capacity').valueAsNumber || 8;
+    button.disabled = true;
+    announce('正在重排缺班席位');
+    try {
+        const response = await fetch('/api/reissue', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({capacity, absences}),
+        });
+        const packet = await response.json();
+        if (!response.ok) throw new Error(packet.message || `重排失败（${response.status}）`);
+        renderReissue(packet);
+        announce('缺班重排已出案，告知凭据已留痕');
+    } catch (error) {
+        announce(error.message, true);
+    } finally {
+        button.disabled = false;
+    }
+});
 byId('print')?.addEventListener('click', () => window.print());
 
 (async () => {
